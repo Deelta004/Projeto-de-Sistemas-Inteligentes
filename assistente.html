@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Assistente Financeiro IA</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="login-section" class="card">
+    <h1 class="login-title">AFAIA (Assistente Financeiro Automatizado com IA)</h1>
+    <form id="login-form">
+      <label>Email</label>
+      <input type="text" id="login-email" placeholder="Digite seu email" required>
+      <label>Senha</label>
+      <input type="password" id="login-password" placeholder="Digite sua senha" required>
+      <button type="submit">Acessar Conta</button>
+      <p>Não possui conta? <a href="cadastro.html">Cadastre-se</a></p>
+    </form>
+  </div>
+
+  <main id="dashboard" style="display: none;">
+    <section class="card">
+      <h2>Olá! 👋</h2>
+      <p>Sou seu assistente financeiro com IA. Vamos gerenciar suas finanças com inteligência?</p>
+    </section>
+
+    <section class="card">
+      <h3>Calculadora de Orçamento Mensal</h3>
+      <form id="budget-form">
+        <input type="number" id="renda" placeholder="Sua Renda (R$)" required>
+        <input type="number" id="despesas" placeholder="Suas Despesas (R$)" required>
+        <button type="submit">Calcular</button>
+      </form>
+      <div id="resultado-calculo" class="resultado"></div>
+    </section>
+
+    <section class="card">
+      <button id="abrir-chat">💬 Abrir Assistente Virtual</button>
+      <div id="chatbox" style="display: none;">
+        <div id="mensagens" class="mensagens"></div>
+        <div class="entrada-chat">
+          <input type="text" id="entrada" placeholder="Pergunte algo...">
+          <button onclick="enviarMensagem()">Enviar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+ <footer class="footer">
+  Tech World - Lucas e Rony
+</footer>
+</body>
+</html>

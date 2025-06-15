@@ -1,0 +1,110 @@
+.login-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #06132c;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+} 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #0a173a, #0c121d);
+  padding: 40px 20px;
+  color: #000000;
+}
+
+.card {
+  background: rgb(230, 223, 223);
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+h2, h3 {
+  color: #06132ceb;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, button {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #06132c;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.resultado {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #16a34a;
+}
+
+#chatbox {
+  margin-top: 15px;
+  padding: 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background-color: #f9fafb;
+}
+
+.mensagens {
+  height: 150px;
+  overflow-y: auto;
+  background-color: #e5e7eb;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.entrada-chat {
+  display: flex;
+  gap: 10px;
+}
+
+.entrada-chat input {
+  flex: 1;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #c6cad1;
+  margin: 30px 0 10px 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
